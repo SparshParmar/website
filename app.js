@@ -35,7 +35,6 @@ const highlightMenu = () => {
     // skillsMenu.addEventListener('click', ()=> {console.log("skill clicked");});
 
     let scrollPos = window.scrollY;
-    console.log(scrollPos);
     if(window.innerWidth> 960 && scrollPos < 600){
         homeMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
