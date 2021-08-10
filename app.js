@@ -35,7 +35,7 @@ const highlightMenu = () => {
     // skillsMenu.addEventListener('click', ()=> {console.log("skill clicked");});
 
     let scrollPos = window.scrollY;
-
+    console.log(scrollPos);
     if(window.innerWidth> 960 && scrollPos < 600){
         homeMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
@@ -51,7 +51,7 @@ const highlightMenu = () => {
 
         return ;
     }
-    else if(window.innerWidth> 960 && scrollPos < 1800){
+    else if(window.innerWidth> 960 && scrollPos < 2100){
         skillsMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         hobbiesMenu.classList.remove('highlight')
@@ -60,7 +60,7 @@ const highlightMenu = () => {
 
         return ;
     }
-    else if(window.innerWidth> 960 && scrollPos < 3145){
+    else if(window.innerWidth> 960 && scrollPos < 4000){
         hobbiesMenu.classList.add('highlight');
         skillsMenu.classList.remove('highlight');
         // console.log("hiiii");

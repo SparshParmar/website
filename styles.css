@@ -394,6 +394,13 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 520px) {
+  .hero__description {
+    text-align: center;
+  }
+}
+
 .main {
   background-color: #131313;
   padding: 20px 0px;
@@ -634,6 +641,10 @@
     height: auto;
   }
 
+  .main {
+    height: 100%;
+  }
+
   .main__img--logo--UBS {
     max-width: 100%;
     height: auto;
@@ -646,7 +657,11 @@
     content: "PWR";
   } */
 }
-
+@media screen and (max-width: 600px) {
+  .main {
+    height: 100%;
+  }
+}
 @media screen and (max-width: 480px) {
   .main__img--card {
     display: flex;
@@ -694,7 +709,9 @@
   -moz-text-fill-color: transparent;
   margin-bottom: 5rem;
   font-size: 2.5rem;
+  margin: 50px;
   cursor: pointer;
+  text-align: center;
 }
 
 .services__wrapper {
@@ -741,7 +758,6 @@
   width: 0;
   width: 0;
   height: 100%;
-  background: #ff6a00;
   transition: all 0.3s;
   border-radius: 4px;
   opacity: 20%;
@@ -755,6 +771,8 @@
 
 .services__card:hover:after {
   width: 100%;
+  color: #fff;
+  box-shadow: 10px 10px 10px linear-gradient(to right, #ff6a00, #4a00e0);
 }
 
 @media screen and (max-width: 674px) {
@@ -864,6 +882,26 @@
   }
 }
 
+@media screen and (max-width: 780px) {
+  .hobbies__description {
+    width: 17rem;
+    height: 20rem;
+    align-self: center;
+    word-wrap: hidden;
+    text-align: center;
+  }
+
+  .images__hairdresser {
+    height: 20rem;
+    margin-top: 50px;
+  }
+
+  .images {
+    height: 25rem;
+    margin-top: 50px;
+  }
+}
+
 /* contact */
 
 .contact {
@@ -917,13 +955,10 @@
 }
 .contact__proposal {
   color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: space-evenly;
-  justify-content: space-evenly;
-  height: 200px;
-  padding: 3rem;
+  height: 300px;
+  padding: 2rem;
   margin: 3rem;
+
   align-items: center;
   border-radius: 10px;
   background: #ee0979; /* fallback for old browsers */
@@ -937,22 +972,37 @@
     #ff6a00,
     #4a00e0
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  text-align: center;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 @media screen and (max-width: 630px) {
   .contact__detail {
     font-size: 11px;
-    padding: 10px;
+  }
+  .contact__proposal {
+    margin: 0;
+  }
+
+  .contact__proposal h1 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact__image {
+    margin-top: 15px;
+  }
+
+  .contact__details__stack {
+    width: 100%;
+  }
+
+  .contact__content {
+    padding-bottom: 1rem;
   }
 }
 
-@media screen and (max-width: 630px) {
-  .contact__detail {
-    font-size: 11px;
-    padding: 10px;
-  }
+@media screen and (max-width: 800px) {
 }
 
 .social__media {
